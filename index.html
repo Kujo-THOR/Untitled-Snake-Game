@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>Untitled Snake Game</title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo" data-scroll="#intro">Untitled Snake Game</div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#about">About</a>
+                <a class="nav__link" href="#" data-scroll="#History">History</a>
+                <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
+                <a class="nav__link" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </nav>
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item">Menu</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="page">
+
+    <!-- Intro -->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">Welcome to Snake</h1>
+
+                <a class="btn" href="#">Play Game</a>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="container">
+                <div class="slider__inner">
+                    <div class="slider__item active">
+                        <span class="slider__num">01</span>
+                        <span class="slider__text">About</span>
+                    </div>
+                    <div class="slider__item">
+                        <span class="slider__num">02</span>
+                        <span class="slider__text">History</span>
+                    </div>
+                    <div class="slider__item">
+                        <span class="slider__num">03</span>
+                        <span class="slider__text">Contacts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.intro -->
+
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Story about game</h2>
+                <div class="section__text">
+                    <p>Игрок управляет существом, напоминающим змею, которое двигается по игровому полю (поле ограниченно стенками), собирая яблоки, избегая столкновения с собственным хвостом, краями игрового поля и препятствиями. На игровом поле присутствуют дополнительные препятствия и бонусы. Когда змея съедает яблоко, она становится длиннее, что постепенно усложняет игру.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/about/1.png" height="250px", width="380px"  alt="">
+                        </div>
+                        <div class="card__text">Menu</div>
+                    </div>
+                </div>
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/about/2.png" height="250px", width="380px" alt="">
+                        </div>
+                        <div class="card__text">Level 1</div>
+                    </div>
+                </div>
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/about/3.png" height="250px", width="380px" alt="">
+                        </div>
+                        <div class="card__text">Level 2</div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.container -->
+    </section>
+
+
+    <!-- History -->
+    <section class="section" id="History">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Amazing History</h2>
+            </div>
+
+            <div class="History">
+                <div class="History__item  History__item--border">
+                    <img class="History__icon" src="assets/images/history/1.png" width="12%" alt="">
+
+                    <div class="History__title">Начало</div>
+                    <div class="History__text">В начале 10 класса всем дали задание на любую тему - проект, который должен был содержать полезную и интересную информацию.</div>
+                </div>
+                <div class="History__item  History__item--border">
+                    <img class="History__icon" src="assets/images/history/2.png" width="12%" alt="">
+
+                    <div class="History__title">Создание группы</div>
+                    <div class="History__text">Изначально объединившись с другом, решили делать проект вместе, впоследствии к нам присоединился еще один товарищ.</div>
+                </div>
+                <div class="History__item  History__item--border">
+                    <img class="History__icon" src="assets/images/history/3.png" width="12%" alt="">
+
+                    <div class="History__title">Тема решена!</div>
+                    <div class="History__text">После совета с учителем было решено: Проект включал игру и сайт с информацией.  </div>
+                </div>
+                <div class="History__item">
+                    <img class="History__icon" src="assets/images/history/4.png" width="12%" alt="">
+
+                    <div class="History__title">Подготовка</div>
+                    <div class="History__text">Приступили к работе конечно не сразу, решили сильно не спешить.</div>
+                </div>
+                <div class="History__item">
+                    <img class="History__icon" src="assets/images/history/5.png" width="12%" alt="">
+
+                    <div class="History__title">Работа в разгаре</div>
+                    <div class="History__text">Начали работу под конец первого семестра - дело пошло.</div>
+                </div>
+                <div class="History__item">
+                    <img class="History__icon" src="assets/images/history/6.png" width="12%" alt="">
+
+                    <div class="History__title">Показ</div>
+                    <div class="History__text">Что ж - успели, к показу были готовы, надеемся все получится.</div>
+                </div>
+            </div>
+        </div><!-- /.container -->
+    </section>
+
+
+    <!-- Team -->
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h3 class="section__suptitle">Who we are</h3>
+                <h2 class="section__title">Моя Команда</h2>
+                <div class="section__text">
+                    <p>Команда состоит из трех человек, каждый из которых знает свое дело.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/team/1.jpg" width="344px" alt="">
+                        </div>
+                        <div class="card__text">
+                            <div class="social">
+                                <a class="social__item" target="_blank" href="https://www.facebook.com/profile.php?id=100015100065170">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" target="_blank" href="https://www.instagram.com/b0gdan.27/?hl=ru">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <div class="card__name">Kuznetsov Bogdan</div>
+                        <div class="card__prof">Game Developer</div>
+                    </div>
+                </div><!-- /.card__item -->
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/team/2.jpg" alt="">
+                        </div>
+                        <div class="card__text">
+                            <div class="social">
+                                <a class="social__item" target="_blank" href="https://www.facebook.com/profile.php?id=100021927632573">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" target="_blank" href="https://www.instagram.com/_ko.mpot_/?hl=ru">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <div class="card__name">Kapinus Alex</div>
+                        <div class="card__prof">Programmer</div>
+                    </div>
+                </div><!-- /.card__item -->
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/team/3.jpg" alt="">
+                        </div>
+                        <div class="card__text">
+                            <div class="social">
+                                <a class="social__item" target="_blank" href="https://www.facebook.com/profile.php?id=100009505086476">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" target="_blank" href="https://www.instagram.com/danil_holkin/?hl=ru">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <div class="card__name">Danil Holkin</div>
+                        <div class="card__prof">185</div>
+                    </div>
+                </div><!-- /.card__item -->
+
+            </div><!-- /.card -->
+
+        </div><!-- /.container -->
+    </section>
+
+
+    <!-- Reviews 2 -->
+    <div class="section">
+        <div class="container">
+            <div class="reviews">
+                <div data-slider>
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+                            <div class="reviews__text">“Этот сайт был создан в целях проекта, задачей сайта была дача подробная информация об игре.”</div>
+                            <div class="reviews__author"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+                            <div class="reviews__text">“Этот сайт был создан в целях проекта, задачей сайта была дача подробная информация об игре.”</div>
+                            <div class="reviews__author"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Map -->
+    <section class="section  section--map">
+        <div class="container">
+            <div class="map">
+                <h2 class="map__title">
+                    <div><i class="fas fa-map-marker-alt"></i></div>
+                    <a href="https://maps.app.goo.gl/qjVuXTAbEF7b4C7F6" target="_blank">Open Map</a>
+                </h2>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col  footer__col--first">
+                    <div class="footer__logo">Untitled Snake</div>
+                    <div class="footer__social">
+                        <div class="footer__social-content">
+                            Follow Us:
+                            <a target="_blank" href="https://www.facebook.com/">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a target="_blank" href="https://www.instagram.com/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- /.footer__col -->
+
+            </div><!-- /.footer__inner -->
+
+            <div class="copyright">
+                © 2023 Happy New Year <span>May the Force be with you</span>
+            </div>
+
+        </div><!-- /.container -->
+    </footer>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
