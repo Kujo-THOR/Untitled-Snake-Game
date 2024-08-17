@@ -1,4 +1,4 @@
-# Untitled Website
+# Untitled Snake Game
 ## Welcome
 ### That's the Untitled Snake Game website. I made it at school for our game.
 ##### P.S The game was never released.
