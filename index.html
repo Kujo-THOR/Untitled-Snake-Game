@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -22,14 +24,12 @@
                 <a class="nav__link" href="#" data-scroll="#about">About</a>
                 <a class="nav__link" href="#" data-scroll="#History">History</a>
                 <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
-                <a class="nav__link" href="#">
-                    <i class="fas fa-search"></i>
+                <a class="nav__link" href="#" data-scroll="#intro">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="nav__link" id="search-input" placeholder="Let's Start...">
                 </a>
             </nav>
 
-            <button class="nav-toggle" id="nav_toggle" type="button">
-                <span class="nav-toggle__item">Menu</span>
-            </button>
         </div>
     </div>
 </header>
@@ -41,8 +41,15 @@
         <div class="container">
             <div class="intro__inner">
                 <h1 class="intro__title">Welcome to Snake</h1>
+                <a id="btn" href="#">Play Game</a>
 
-                <a class="btn" href="#">Play Game</a>
+                <div id="customModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Sadly The Game Was Never Invented...</p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -73,7 +80,7 @@
             <div class="section__header">
                 <h2 class="section__title">Story about game</h2>
                 <div class="section__text">
-                    <p>Игрок управляет существом, напоминающим змею, которое двигается по игровому полю (поле ограниченно стенками), собирая яблоки, избегая столкновения с собственным хвостом, краями игрового поля и препятствиями. На игровом поле присутствуют дополнительные препятствия и бонусы. Когда змея съедает яблоко, она становится длиннее, что постепенно усложняет игру.</p>
+                    <p>The player controls a creature resembling a snake, which moves across the game field (the field is bordered by walls), collecting apples while avoiding collisions with its own tail, the edges of the game field, and obstacles. Additional obstacles and bonuses are present on the game field. When the snake eats an apple, it grows longer, gradually making the game more difficult.</p>
                 </div>
             </div>
 
@@ -120,38 +127,38 @@
                 <div class="History__item  History__item--border">
                     <img class="History__icon" src="assets/images/history/1.png" width="12%" alt="">
 
-                    <div class="History__title">Начало</div>
-                    <div class="History__text">В начале 10 класса всем дали задание на любую тему - проект, который должен был содержать полезную и интересную информацию.</div>
+                    <div class="History__title">Beginning</div>
+                    <div class="History__text">At the start of 10th grade, everyone was assigned a project on any topic, designed to showcase IT skills.</div>
                 </div>
                 <div class="History__item  History__item--border">
                     <img class="History__icon" src="assets/images/history/2.png" width="12%" alt="">
 
-                    <div class="History__title">Создание группы</div>
-                    <div class="History__text">Изначально объединившись с другом, решили делать проект вместе, впоследствии к нам присоединился еще один товарищ.</div>
+                    <div class="History__title">Assembling</div>
+                    <div class="History__text">Initially, after teaming up with a friend, we decided to work on the project together, and later, another friend joined us.</div>
                 </div>
                 <div class="History__item  History__item--border">
                     <img class="History__icon" src="assets/images/history/3.png" width="12%" alt="">
 
-                    <div class="History__title">Тема решена!</div>
-                    <div class="History__text">После совета с учителем было решено: Проект включал игру и сайт с информацией.  </div>
+                    <div class="History__title">We are Set</div>
+                    <div class="History__text">After consulting with the teacher, it was decided: The project would include a game and a website with description.</div>
                 </div>
                 <div class="History__item">
                     <img class="History__icon" src="assets/images/history/4.png" width="12%" alt="">
 
-                    <div class="History__title">Подготовка</div>
-                    <div class="History__text">Приступили к работе конечно не сразу, решили сильно не спешить.</div>
+                    <div class="History__title">Preparation</div>
+                    <div class="History__text">We didn't start working on it right away), instead, we decided not to rush and take our time.</div>
                 </div>
                 <div class="History__item">
                     <img class="History__icon" src="assets/images/history/5.png" width="12%" alt="">
 
-                    <div class="History__title">Работа в разгаре</div>
-                    <div class="History__text">Начали работу под конец первого семестра - дело пошло.</div>
+                    <div class="History__title">Mistakes</div>
+                    <div class="History__text">We started working towards the end of the year, and that was mistake.</div>
                 </div>
                 <div class="History__item">
                     <img class="History__icon" src="assets/images/history/6.png" width="12%" alt="">
 
-                    <div class="History__title">Показ</div>
-                    <div class="History__text">Что ж - успели, к показу были готовы, надеемся все получится.</div>
+                    <div class="History__title">Presentation</div>
+                    <div class="History__text">Well, we made it; we were ready for the presentation. We hope everything goes well.</div>
                 </div>
             </div>
         </div><!-- /.container -->
@@ -163,9 +170,9 @@
         <div class="container">
             <div class="section__header">
                 <h3 class="section__suptitle">Who we are</h3>
-                <h2 class="section__title">Моя Команда</h2>
+                <h2 class="section__title">The Team</h2>
                 <div class="section__text">
-                    <p>Команда состоит из трех человек, каждый из которых знает свое дело.</p>
+                    <p>The team consists of three people, each of whom is an expert in their field.</p>
                 </div>
             </div>
 
@@ -250,7 +257,7 @@
                     <div>
                         <div class="reviews__item">
                             <img class="reviews__photo" src="assets/images/avatar.png" alt="">
-                            <div class="reviews__text">“Этот сайт был создан в целях проекта, задачей сайта была дача подробная информация об игре.”</div>
+                            <div class="reviews__text">“This website was created for the project, with the goal of providing detailed information about the game.”</div>
                             <div class="reviews__author"></div>
                         </div>
                     </div>
@@ -258,7 +265,7 @@
                     <div>
                         <div class="reviews__item">
                             <img class="reviews__photo" src="assets/images/avatar.png" alt="">
-                            <div class="reviews__text">“Этот сайт был создан в целях проекта, задачей сайта была дача подробная информация об игре.”</div>
+                            <div class="reviews__text">“The Game Was Never Invented.</div>
                             <div class="reviews__author"></div>
                         </div>
                     </div>
@@ -303,7 +310,7 @@
             </div><!-- /.footer__inner -->
 
             <div class="copyright">
-                © 2023 Happy New Year <span>May the Force be with you</span>
+                © 2024 Happy New Year <span>May the Force be with you</span>
             </div>
 
         </div><!-- /.container -->

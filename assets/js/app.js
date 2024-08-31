@@ -67,4 +67,30 @@ $(function() {
         slidesToShow: 1,
         slidesToScroll: 1
     });
+
+    /* Play Game button */
+    var modal = document.getElementById("customModal");
+    var btn = document.getElementById("btn");
+    var span = document.getElementsByClassName("close")[0];
+    // When the user clicks the button
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    // When the user clicks on <x>
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+
+    /* Search */
+    var icon = document.getElementById(".search-icon");
+    var imput = document.getElementById("#search-input");
+    // When the user clicks the button
+    icon.addEventListener('click', function (event) {
+        event.preventDefault();
+        // Toggle the active
+        imput.classList.toggle('active');
+    });
+    
 });
+
